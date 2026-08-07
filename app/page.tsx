@@ -261,9 +261,9 @@ export default function Home() {
           <div className="dot-grid absolute inset-0 -z-10 text-slate-300/60 dark:text-slate-700/40 [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]" />
 
           <div className="fade-up" style={{ animationDelay: "0.05s" }}>
-            <p className="font-mono text-amber-600 dark:text-amber-400 text-sm mb-3">
-              // Web developer
-            </p>
+       <p className="font-mono text-amber-600 dark:text-amber-400 text-sm mb-3">
+  {'// Web developer'}
+</p>
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
               Sabahat Yaseen
             </h2>
