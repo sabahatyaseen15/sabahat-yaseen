@@ -80,7 +80,7 @@ export default function Contact() {
   const [status, setStatus] = useState<Status>("idle");
 
   // 🔑 Replace these three with your own EmailJS values (see setup steps below the file)
-  const SERVICE_ID = "service_7ikyrem";
+  const SERVICE_ID = "service_gdtfo0f";
   const TEMPLATE_ID = "template_mazs86p";
   const PUBLIC_KEY = "aw8pNeD0tV_3miNzy";
 
