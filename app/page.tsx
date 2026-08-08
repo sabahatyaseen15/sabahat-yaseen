@@ -308,24 +308,27 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="flex items-center gap-6 mt-9">
-              <a
-                href="#portfolio"
-                className="group/cta flex items-center gap-2 rounded-md bg-amber-600 hover:bg-amber-500 text-white text-sm font-mono px-5 py-3 shadow-lg shadow-amber-600/25 hover:shadow-amber-500/30 transition-all"
-              >
-                view my work
-                <span className="inline-block transition-transform duration-300 group-hover/cta:translate-x-1">→</span>
-              </a>
-              <a
-                href="/resume.pdf"
-                download="Sabahat-Yaseen-Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-md border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-amber-500 hover:text-amber-600 dark:hover:text-amber-400 text-sm font-mono px-5 py-3 transition-all"
-              >
-                download resume
-              </a>
-              <div className="flex gap-5 text-2xl text-slate-500 dark:text-slate-400">
+            <div className="flex items-center gap-4 mt-9">
+           <a
+  href="#portfolio"
+  className="group/cta flex items-center gap-1 sm:gap-2 rounded-md bg-amber-600 hover:bg-amber-500 text-white text-xs sm:text-sm font-mono px-3 py-2 sm:px-5 sm:py-3 whitespace-nowrap shadow-lg shadow-amber-600/25 hover:shadow-amber-500/30 transition-all"
+>
+  view my work
+  <span className="inline-block transition-transform duration-300 group-hover/cta:translate-x-1">
+    →
+  </span>
+</a>
+
+<a
+  href="/resume.pdf"
+  download="Sabahat-Yaseen-Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-1 sm:gap-2 rounded-md border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-amber-500 hover:text-amber-600 dark:hover:text-amber-400 text-xs sm:text-sm font-mono px-3 py-2 sm:px-5 sm:py-3 whitespace-nowrap transition-all"
+>
+  download resume
+</a>
+              <div className="flex gap-4 text-2xl text-slate-500 dark:text-slate-400">
 
                 <a href="https://github.com/sabahatyaseen15" aria-label="GitHub"
                   className="hover:text-amber-500 hover:-translate-y-0.5 transition-all">
