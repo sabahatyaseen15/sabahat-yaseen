@@ -24,7 +24,7 @@ import {
 function TagHeading({ tag, title }: { tag: string; title: string }) {
   return (
     <div className="mb-8">
-      <p className="font-mono text-sm tracking-wide text-amber-600 dark:text-amber-400">
+      <p className="font-mono text-sm tracking-wide  text-amber-600 dark:text-amber-400">
         {`<${tag}>`}
       </p>
       <h3 className="text-3xl md:text-4xl font-semibold text-slate-900 dark:text-white mt-1">
