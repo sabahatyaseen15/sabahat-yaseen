@@ -9,9 +9,9 @@ import code from '../public/code.png';
 import consulting from '../public/consulting.png';
 import web1 from "../public/davico.png";
 import web2 from "../public/qimmit.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
+import web3 from "../public/chta-app.png";
+import web4 from "../public/Novotel.png";
+import web5 from "../public/plantgaming.png";
 import React, { useState, useEffect, useRef } from 'react';
 
 import {
@@ -115,37 +115,53 @@ const projects = [
     tags: ["Angular", "Bootstrap"],
     link: "https://davco-pk.vercel.app/",
   },
-{
-img: web2,
-name: "Qimaat",
-title: "Qimaat E-commerce Platform",
-desc: "A modern e-commerce platform with product browsing, shopping cart, checkout, and a seamless online shopping experience.",
-tags: ["React", "Next.js", "Tailwind CSS"],
-link: "https://staging.qimaat.com/",
-},
+  {
+    img: web2,
+    name: "Qimaat",
+    title: "Qimaat E-commerce Platform",
+    desc: "A modern e-commerce platform with product browsing, shopping cart, checkout, and a seamless online shopping experience.",
+    tags: ["React", "Next.js", "Tailwind CSS"],
+    link: "https://staging.qimaat.com/",
+  },
   {
     img: web3,
-    name: "medistore",
-    title: "Medical Store Management",
-    desc: "Stock tracking and sales for medical retailers",
-    tags: ["React", "State Mgmt"],
-    link: "#",
+
+    name: "Chat App",
+
+    title: "Real-Time Chat Application",
+
+    desc: "A real-time messaging application built with Firebase for instant communication and live chat updates.",
+
+    tags: ["React", "Firebase"],
+
+    link: "https://chatapp-psi-one.vercel.app/",
   },
+
   {
     img: web4,
-    name: "playzone",
-    title: "Betting & Gaming Platform",
-    desc: "Real-time, interactive gaming experience",
-    tags: ["React", "Real-time"],
-    link: "#",
-  },
+
+    name: "Hotel Management System",
+
+    title: "Hotel Management & Reservation Platform",
+
+    desc: "A comprehensive hotel management system for managing rooms, reservations, guests, billing, and daily hotel operations.",
+
+    tags: ["Angular", "Bootstrap", "TypeScript"],
+    link: "https://hotel-management-srj8.vercel.app/",
+  }
+  ,
   {
     img: web5,
-    name: "skillnest",
-    title: "SkillNest",
-    desc: "Learning & education platform for cohort courses",
-    tags: ["Next.js", "Tailwind"],
-    link: "#",
+
+    name: "SmartSoft Gaming",
+
+    title: "Gaming & Casino Platform",
+
+    desc: "Interactive gaming platform featuring engaging crash and instant games with a modern, responsive user experience.",
+
+    tags: ["Next.js", "Tailwind CSS"],
+
+    link: "https://smartsoftgame.vercel.app/dashboard",
   },
 ];
 
@@ -163,7 +179,6 @@ export default function Home() {
       <Head>
         <title>Sabahat Yaseen — Web Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
@@ -261,9 +276,9 @@ export default function Home() {
           <div className="dot-grid absolute inset-0 -z-10 text-slate-300/60 dark:text-slate-700/40 [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]" />
 
           <div className="fade-up" style={{ animationDelay: "0.05s" }}>
-       <p className="font-mono text-amber-600 dark:text-amber-400 text-sm mb-3">
-  {'// Web developer'}
-</p>
+            <p className="font-mono text-amber-600 dark:text-amber-400 text-sm mb-3">
+              {'// Web developer'}
+            </p>
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
               Sabahat Yaseen
             </h2>
@@ -301,25 +316,28 @@ export default function Home() {
                 view my work
                 <span className="inline-block transition-transform duration-300 group-hover/cta:translate-x-1">→</span>
               </a>
+              <a
+                href="/resume.pdf"
+                download="Sabahat-Yaseen-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-md border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-amber-500 hover:text-amber-600 dark:hover:text-amber-400 text-sm font-mono px-5 py-3 transition-all"
+              >
+                download resume
+              </a>
               <div className="flex gap-5 text-2xl text-slate-500 dark:text-slate-400">
-                <a href="https://www.instagram.com/johnsonchin1009/" aria-label="Instagram"
-                  className="hover:text-amber-500 hover:-translate-y-0.5 transition-all">
-                  <AiFillInstagram />
-                </a>
-                <a href="https://github.com/JohnsonChin1009" aria-label="GitHub"
+
+                <a href="https://github.com/sabahatyaseen15" aria-label="GitHub"
                   className="hover:text-amber-500 hover:-translate-y-0.5 transition-all">
                   <AiFillGithub />
                 </a>
-                <a href="https://www.linkedin.com/in/johnson-chin-70b865224/" aria-label="LinkedIn"
+                <a href="https://www.linkedin.com/in/sabahat-yaseen-4a4193235/" aria-label="LinkedIn"
                   className="hover:text-amber-500 hover:-translate-y-0.5 transition-all">
                   <AiFillLinkedin />
                 </a>
               </div>
             </div>
           </div>
-
-          {/* Photo styled as an open editor tab, tying the portrait
-              back to the site's code-editor visual language. */}
           <div
             className="hero-photo mx-auto w-full max-w-sm rounded-xl overflow-hidden shadow-xl shadow-slate-300/40 dark:shadow-black/40 border border-slate-200 dark:border-slate-800"
             style={{ animationDelay: "0.2s" }}
@@ -449,9 +467,8 @@ export default function Home() {
             &copy; {new Date().getFullYear()} Sabahat Yaseen — built with Next.js &amp; Tailwind.
           </p>
           <div className="flex gap-5 text-xl text-slate-500 dark:text-slate-400">
-            <a href="https://github.com/JohnsonChin1009" aria-label="GitHub" className="hover:text-amber-500 transition-colors"><AiFillGithub /></a>
-            <a href="https://www.linkedin.com/in/johnson-chin-70b865224/" aria-label="LinkedIn" className="hover:text-amber-500 transition-colors"><AiFillLinkedin /></a>
-            <a href="https://www.instagram.com/johnsonchin1009/" aria-label="Instagram" className="hover:text-amber-500 transition-colors"><AiFillInstagram /></a>
+            <a href="https://github.com/sabahatyaseen15" aria-label="GitHub" className="hover:text-amber-500 transition-colors"><AiFillGithub /></a>
+            <a href="https://www.linkedin.com/in/sabahat-yaseen-4a4193235/" aria-label="LinkedIn" className="hover:text-amber-500 transition-colors"><AiFillLinkedin /></a>
           </div>
         </footer>
 
