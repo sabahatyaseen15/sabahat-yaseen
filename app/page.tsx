@@ -13,7 +13,7 @@ import web3 from "../public/chta-app.png";
 import web4 from "../public/Novotel.png";
 import web5 from "../public/plantgaming.png";
 import React, { useState, useEffect, useRef } from 'react';
-
+import Contact from "../app/contact"; 
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -167,8 +167,8 @@ const projects = [
 
 const stats = [
   { value: "2+", label: "years experience" },
-  { value: "10+", label: "projects shipped" },
-  { value: "5+", label: "core technologies" },
+  { value: "20+", label: "projects shipped" },
+  { value: "8+", label: "core technologies" },
 ];
 
 export default function Home() {
@@ -279,7 +279,7 @@ export default function Home() {
             <p className="font-mono text-amber-600 dark:text-amber-400 text-sm mb-3">
               {'// Web developer'}
             </p>
-            <h2 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight whitespace-nowrap">
               Sabahat Yaseen
             </h2>
             <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mt-3 font-mono">
@@ -308,28 +308,28 @@ export default function Home() {
               ))}
             </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-4 mt-9 flex-wrap ">
-<div className="flex flex-row items-center gap-2 sm:gap-4">
-  <a
-    href="#portfolio"
-    className="group/cta flex items-center gap-1 sm:gap-2 rounded-md bg-amber-600 hover:bg-amber-500 text-white text-xs sm:text-sm font-mono px-3 py-2 sm:px-5 sm:py-3 whitespace-nowrap shadow-lg shadow-amber-600/25 hover:shadow-amber-500/30 transition-all"
-  >
-    view my work
-    <span className="inline-block transition-transform duration-300 group-hover/cta:translate-x-1">
-      →
-    </span>
-  </a>
+            <div className="flex flex-col md:flex-row items-center gap-4 mt-9 flex-wrap ">
+              <div className="flex flex-row items-center gap-2 sm:gap-4">
+                <a
+                  href="#portfolio"
+                  className="group/cta flex items-center gap-1 sm:gap-2 rounded-md bg-amber-600 hover:bg-amber-500 text-white text-xs sm:text-sm font-mono px-3 py-2 sm:px-5 sm:py-3 whitespace-nowrap shadow-lg shadow-amber-600/25 hover:shadow-amber-500/30 transition-all"
+                >
+                  view my work
+                  <span className="inline-block transition-transform duration-300 group-hover/cta:translate-x-1">
+                    →
+                  </span>
+                </a>
 
-  <a
-    href="/resume.pdf"
-    download="Sabahat-Yaseen-Resume.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-1 sm:gap-2 rounded-md border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-amber-500 hover:text-amber-600 dark:hover:text-amber-400 text-xs sm:text-sm font-mono px-3 py-2 sm:px-5 sm:py-3 whitespace-nowrap transition-all"
-  >
-    download resume
-  </a>
-</div>
+                <a
+                  href="/resume.pdf"
+                  download="Sabahat-Yaseen-Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 sm:gap-2 rounded-md border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-amber-500 hover:text-amber-600 dark:hover:text-amber-400 text-xs sm:text-sm font-mono px-3 py-2 sm:px-5 sm:py-3 whitespace-nowrap transition-all"
+                >
+                  download resume
+                </a>
+              </div>
               <div className="flex gap-4 text-2xl text-slate-500 dark:text-slate-400">
 
                 <a href="https://github.com/sabahatyaseen15" aria-label="GitHub"
@@ -465,7 +465,7 @@ export default function Home() {
             ))}
           </div>
         </section>
-
+<Contact />
         {/* ---------------- Footer ---------------- */}
         <footer className="py-12 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-mono text-sm text-slate-500 dark:text-slate-400">
