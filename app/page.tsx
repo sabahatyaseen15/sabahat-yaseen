@@ -14,6 +14,7 @@ import web4 from "../public/Novotel.png";
 import web5 from "../public/plantgaming.png";
 import React, { useState, useEffect, useRef } from 'react';
 import Contact from "../app/contact"; 
+import ChatBot from "../app/Chatbot";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -476,7 +477,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/sabahat-yaseen-4a4193235/" aria-label="LinkedIn" className="hover:text-amber-500 transition-colors"><AiFillLinkedin /></a>
           </div>
         </footer>
-
+<ChatBot />
       </main>
     </div>
   )

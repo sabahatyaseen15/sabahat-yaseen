@@ -151,9 +151,9 @@ export default function Contact() {
                   linkedin.com/in/sabahat-yaseen
                 </a>
               </div>
-              <p className="text-xs text-slate-500 dark:text-slate-400 pt-2">
+              {/* <p className="text-xs text-slate-500 dark:text-slate-400 pt-2">
                 {'// usually replies within 24 hours'}
-              </p>
+              </p> */}
             </div>
           </div>
 
